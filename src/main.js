@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Mui from 'vue-awesome-mui'
+Vue.use(Mui)
 
 Vue.config.productionTip = false
 

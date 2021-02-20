@@ -7,6 +7,15 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <script>
+  	  document.addEventListener( "plusready", onPlusReady, false );
+  	  // 扩展API加载完毕，现在可以正常调用扩展API
+  	  function onPlusReady() {
+  	      var e = document.getElementById("scan");
+  	      //e.removeAttribute( "disabled" );
+  	  }
+  	  var scan = null;
+  </script>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
